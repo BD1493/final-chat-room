@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: chat-app
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: PORT
+        value: 80
